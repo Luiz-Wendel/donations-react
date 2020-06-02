@@ -1,5 +1,6 @@
 import React from 'react'
 import { Nav } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 const listItens = ['Donations', 'Make a Donation']
 
@@ -9,7 +10,7 @@ export default function Links() {
       {
         listItens.map(item => {
           return (
-            <Nav.Link href="#">{item}</Nav.Link>
+            <Link to="#">{item}</Link>
           )
         })
       }

@@ -1,14 +1,10 @@
 import React from 'react';
+import Routes from './Routes'
 import './Global.css';
-import Navegacao from './components/navegacao'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  return (
-    <div className="App">
-      <Navegacao />
-    </div>
-  );
+  return <Routes />
 }
 
 export default App;

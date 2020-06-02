@@ -1,9 +1,25 @@
 import React from 'react'
+import { Card, Button } from 'react-bootstrap'
 
-function Card() {
+export default function Cards(props) {
   return(
-    <h1>Card component</h1>
+    <Card style={{ width: '18rem' }} className="mx-3 my-2">
+      <Card.Body>
+        <Card.Title>{props.title}</Card.Title>
+        <Card.Text className="text-muted">
+          De: {props.user}
+        </Card.Text>
+        <Card.Text>
+          {props.content}
+        </Card.Text>
+        <Button variant="success">Entrar em contato</Button>
+      </Card.Body>
+    </Card>
   )
 }
 
-export default Card
+Cards.defaultProps = {
+  title: 'Donation',
+  user: 'Anonymous',
+  content: "I'm donating this"
+}

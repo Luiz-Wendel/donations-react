@@ -1,3 +1,4 @@
-.App {
-  color: red
+.principal {
+  display: flex;
+  flex-wrap: wrap;
 }
